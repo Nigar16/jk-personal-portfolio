@@ -34,7 +34,7 @@ const InlineCourse = () => {
       </div>
 
 
-        <div className="grid-container pt-24 grid grid-rows-2 mr-auto ml-auto w-[90%]   grid-flow-col place-items-center grid-cols-3 gap-2 ">
+        <div className="grid-container pt-24 grid grid-rows-2 mr-auto ml-auto w-[90%]  lg:flex flex-col grid-flow-col place-items-center grid-cols-3 gap-2 ">
           {/* {getTillNumbers(amount).map((num) => {
              return  <div><CourseItem /></div>
           })} */}

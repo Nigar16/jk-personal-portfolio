@@ -28,9 +28,9 @@ const Footer = () => {
           </div>
 
           <div className="flex border-[1px] border-[#D3DBE3] px-4 py-2 rounded-[6px]   w-[160px] mt-4 justify-between">
-            <Facebook />
-            <Linkedin />
-            <Instagram />
+              <a  href="#" className="cursor-pointer"><Facebook /></a> 
+              <a  href="#"  className="cursor-pointer"><Linkedin /></a> 
+              <a  href="#" className="cursor-pointer"><Instagram /></a> 
           </div>
         </div>
       </div>

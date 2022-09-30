@@ -19,7 +19,7 @@ const Course = () => {
 
       <div className=" w-[90%] mr-auto ml-auto pt-16"> 
         
-        <div className="grid-container grid grid-rows-2 mr-auto ml-auto   grid-flow-col place-items-center grid-cols-3 gap-2 ">
+        <div className="grid-container grid grid-rows-2 mr-auto ml-auto lg:flex flex-col   grid-flow-col place-items-center grid-cols-3 gap-2 ">
           {/* {getTillNumbers(amount).map((num) => {
              return  <div><CourseItem /></div>
           })} */}

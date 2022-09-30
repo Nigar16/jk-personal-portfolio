@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import JGimg from "../../assets/images/Jk.png";
 import { ReactComponent as Facebook } from "../../assets/icons/facebook.svg";
 import { ReactComponent as Linkedin } from "../../assets/icons/Linkedin.svg";
@@ -21,9 +22,9 @@ const Hero = () => {
           <div className="mt-36 lg:hidden">
             <p className="mb-2">Follow me on</p>
             <div className="flex w-[124px] justify-between items-center">
-              <Facebook />
-              <Linkedin />
-              <Instagram />
+              <a  href="#" className="cursor-pointer"><Facebook /></a> 
+              <a  href="#"  className="cursor-pointer"><Linkedin /></a> 
+              <a  href="#" className="cursor-pointer"><Instagram /></a> 
             </div>
           </div>
         </div>

@@ -1,7 +1,13 @@
-import React from 'react'
-
-export default function Home() {
+import React from "react";
+import Hero from "./Hero";
+import HomeCourses from "./HomeCourses";
+const Home = () => {
   return (
-    <div className='text-3xl font-bold underline'>Home</div>
-  )
-}
+  <div className=" ">
+   <Hero/>
+   <HomeCourses/>
+  </div>
+  );
+};
+
+export default Home;

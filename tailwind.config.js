@@ -43,9 +43,24 @@ module.exports = {
         'news-text': '#F3F3F3',
         'news-empty-border': '#949494',
         'primary-light': '#94B7EC',
-        'line': '#243652'
+        'line': '#243652',
+        'light-gray':'#e4e8f1',
+        'ink-blue':'#143068'
       },
+      fontFamily: {
+        'openSans': ['OpenSans']
+      },
+      margin: {
+        '30': '120px',
+        
+      },
+      lineHeight: {
+        '12': '3rem',
+      },
+  
     },
   },
   plugins: [],
+
+
 };

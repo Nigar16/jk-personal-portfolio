@@ -1,12 +1,15 @@
 import React from "react";
-import { ReactComponent as AzerCosmos } from "../../assets/icons/iconazercosmos.svg";
-import { ReactComponent as P } from "../../assets/icons/p.svg";
-import { ReactComponent as UfazIcon } from "../../assets/icons/ufaz.svg";
-import { ReactComponent as Walk } from "../../assets/icons/2walk.svg";
-import { ReactComponent as Javachip } from "../../assets/icons/javachip.svg";
-import { ReactComponent as Agbank } from "../../assets/icons/agbank.svg";
+import  AzerCosmos  from "../../assets/icons/iconazercosmos.svg";
+import  P  from "../../assets/icons/p.svg";
+import  UfazIcon  from "../../assets/icons/ufaz.svg";
+import  Walk  from "../../assets/icons/2walk.svg";
+import  Javachip  from "../../assets/icons/javachip.svg";
+import  Agbank  from "../../assets/icons/agbank.svg";
+
 
 const HeroFooter = () => {
+
+  
   const iconData = [
     { id: 1, icon: UfazIcon },
     { id: 2, icon: AzerCosmos },
@@ -17,29 +20,13 @@ const HeroFooter = () => {
   ];
   return (
     <section className="w-full  grid grid-cols-6 place-items-center lg:grid-cols-2  py-4 px-8 bg-[#143068]">
-      {/* <div className="lg:mb-8">
-        <AzerCosmos />
-      </div>
-      <div className="lg:mb-8">
-        <P />
-      </div>
-      <div className="lg:mb-8">
-        <UfazIcon />
-      </div>
-      <div className="lg:mb-8">
-        <Walk />
-      </div>
-      <div className="lg:mb-8">
-        <Javachip />
-      </div>
-      <div className="lg:mb-8">
-        <Agbank />
-      </div> */}
+    
 
-      {iconData.map((item) => {
+      {iconData.map((item,index) => {
+        console.log(item)
         return (
-          <div className="lg:mb-8" key={item.id}>
-            <item.icon />
+          <div key={item.id} className="lg:mb-8" >
+            <img src={item.icon}/>
           </div>
         );
       })}

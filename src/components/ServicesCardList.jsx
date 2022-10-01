@@ -9,13 +9,10 @@ export default function ServicesCardList({ items }) {
       
         <div
           style={{ background: `${item.lightcolor}` }}
-          className={`p-6  rounded-lg`}
-        >
-           <img src={item.icon} alt="" /> 
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold ">{item.cardname}</h5>
-          </a>
-          <p className="mb-3 font-normal text-black-700">{item.content}</p>
+          className='p-8 rounded-md'>
+           <img className='p-3 rounded-md' src={item.icon} alt="" style={{ background: `${item.darkcolor}` }} />
+            <h5 className="mt-[16px] mb-[8px] text-[16px] font-bold leading-6">{item.cardname}</h5>
+             <p className=" text-[14px] leading-5">{item.content}</p>
         </div>
       </div>
     );

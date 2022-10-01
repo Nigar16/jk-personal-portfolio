@@ -9,7 +9,7 @@ export default function Skills({items}) {
         </div>)
     })
   return (
-    <div className='grid grid-rows-3 md:grid-rows-5 grid-flow-col gap-4'>
+    <div className='grid grid-rows-3  grid-flow-col gap-4'>
         {renderedItems}
     </div>
   )

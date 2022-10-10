@@ -6,7 +6,7 @@ import helpers from "../../helpers";
 import storageCourses from "../../storage-courses";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-
+import SeeAll from '../../components/layout/SeeAll'
 const HomeCourses = memo(({ amount = 5 }) => {
 const navigate=useNavigate()
 
@@ -26,7 +26,7 @@ const navigate=useNavigate()
       <div>
         <div className=" mb-4 items-center mr-auto ml-auto flex justify-between">
           <h1 className="font-[700] text-[32px]">Courses</h1>
-          <span className="cursor-pointer" onClick={()=>{navigate('/courses')}}>See all→</span>
+          <SeeAll navigation='courses' />
         </div>
         <div className="grid-container grid  mr-auto ml-auto grid-rows-2 lg:flex flex-col  grid-flow-col place-items-center grid-cols-3  gap-2 ">
           {/* {getTillNumbers(amount).map((num) => {

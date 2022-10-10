@@ -18,21 +18,21 @@ const items=[
         cardname:'Front-End Development',
         content:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
         lightcolor:"#f7b0c0",
-        darkcolor:'#66A5EC',
+        darkcolor:'#EF8BA2',
     },
     {
         icon: group,
         cardname:'Software Project Management',
         content:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
         lightcolor:"#f9de6f",
-        darkcolor:'#66A5EC',
+        darkcolor:'#F8C122',
     } ,
     {
         icon:network,
         cardname:'Service title',
         content:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
         lightcolor:"#8098ed",
-        darkcolor:'#66A5EC',
+        darkcolor:'#597AEC',
     },
 
     {
@@ -40,14 +40,14 @@ const items=[
         cardname:'Back-End Development',
         content:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
         lightcolor:"#bbefef",
-        darkcolor:'#66A5EC',
+        darkcolor:'#2CEEEE',
     },
     {
         icon:group,
         cardname:'Service title',
         content:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
         lightcolor:"#e8afe7",
-        darkcolor:'#66A5EC',
+        darkcolor:'#E47CE3',
     },
 ]
 

@@ -6,15 +6,15 @@ import { useParams } from "react-router-dom";
 import storageCourses from "../../storage-courses";
 
 const InlineCourse = () => {
-  const [product, setProduct] = useState({});
+  const [course, setCourse] = useState({});
   const { courseid } = useParams();
 
   const getCourses = () => {
     const newProduct = storageCourses.find(
       (item) => item.id === parseInt(courseid)
     );
-    setProduct(newProduct);
-    console.log(product);
+    setCourse(newProduct);
+    console.log(course);
   };
   useEffect(() => {
     getCourses();
@@ -23,12 +23,12 @@ const InlineCourse = () => {
     <section className="pt-28">
       <div className="flex  w-[90%] mr-auto ml-auto justify-around lg:flex-col">
         <div className="w-[100%] mr-auto ml-auto">
-          <img className="w-[600px] ml-auto mr-auto lg:w-[100%]" src={product.image} />
+          <img className="w-[600px] ml-auto mr-auto lg:w-[100%]" src={course.image} />
         </div>
         <div className="w-[100%] pl-2 lg:pt-16">
-          <h1 className="text-16 pb-2 font-[600]">{product.title}</h1>
+          <h1 className="text-16 pb-2 font-[600]">{course.title}</h1>
           <p className="text-8">
-           {product.content}
+           {course.content}
           </p>
         </div>
       </div>

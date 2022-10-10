@@ -13,7 +13,7 @@ const Navbar = () => {
   const ContactmeButton= <Button onClick={onArrowClick}>Contact me</Button>
   return (
     <>
-      <div className="fixed w-full bg-[#fff]">
+      <div className="fixed z-10 w-full bg-[#fff]">
         <div className="block lg:hidden ">
           <NavbarDesktop ContactmeButton={ContactmeButton}/>
         </div>

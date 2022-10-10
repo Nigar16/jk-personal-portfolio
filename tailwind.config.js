@@ -26,6 +26,7 @@ module.exports = {
 
       'lg': {'max': '1040px'},
       // => @media (max-width: 1023px) { ... }
+      'lg2': {'max': '867px'},
 
       'md': {'max': '767px'},
       // => @media (max-width: 767px) { ... }

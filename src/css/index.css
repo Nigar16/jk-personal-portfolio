@@ -20,5 +20,8 @@
 .navlinkDesk.active{
     @apply  text-[#338FE8]
 }
-
+.scroll{
+    @apply overflow-x-auto  !important
+     
+}
 }

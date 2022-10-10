@@ -16,6 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Course />} />
           <Route path="/inline-courses/:courseid" element={<InlineCourse />} />
+          {/*<Route path="/blog-posts/:courseid" element={<Blog />} />*/}
+
         </Routes>
       </LayOut>
   </BrowserRouter>

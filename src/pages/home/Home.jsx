@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import HomeCourses from "./HomeCourses";
 import Services from "../views/Services";
 import AboutMe from "../views/AboutMe";
+import BlogPosts from "../views/BlogPosts";
 const Home = () => {
   return (
     <div className=" ">
@@ -10,6 +11,7 @@ const Home = () => {
       <AboutMe />
       <HomeCourses />
       <Services />
+        <BlogPosts/>
     </div>
   );
 };

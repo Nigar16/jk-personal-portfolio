@@ -32,7 +32,7 @@ export default function ProjectsPage() {
           am a quick learner and experienced at problem-solving.
         </p>
       </div>
-      <div className="flex justify-center sm:flex-col  py-8 w-full bg-[#1E4F99]   my-24">
+      <div className="grid grid-cols-4 lg:grid-cols-2 place-items-center  sm:flex-col  py-8 w-full bg-[#1E4F99]   my-24">
         <ProjectServices />
       </div>
       {/* <ProjectFilter   projectTypes ={projectTypes} /> */}

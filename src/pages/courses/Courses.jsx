@@ -6,7 +6,7 @@ const Course = () => {
     <section className="w-[90%] mr-auto ml-auto pt-24">
       <div className="w-[90%] mr-auto ml-auto">
         <h1 className="text-[32px] font-[700] pb-4">Courses</h1>
-        <p>
+        <p className="text-[#414448]">
           I'm an enthusiastic and highly motivated Software Engineer experienced
           in developing reliable and user-friendly web-based solutions in
           different domains, especially experience in the FinTech and Healthcare
@@ -19,7 +19,7 @@ const Course = () => {
 
       <div className=" w-[90%] mr-auto ml-auto pt-16"> 
         
-        <div className="grid-container grid grid-rows-2 mr-auto ml-auto lg:flex flex-col   grid-flow-col place-items-center grid-cols-3 gap-2 ">
+        <div className="grid grid-cols-2  mr-auto ml-auto xl:flex flex-col    place-items-center  gap-2 ">
           {/* {getTillNumbers(amount).map((num) => {
              return  <div><CourseItem /></div>
           })} */}
@@ -27,7 +27,7 @@ const Course = () => {
           {storageCourses
             .filter((item, index) => index < 5)
             .map((item) => {
-              return <CourseItem item={item} />;
+              return <CourseItem item={item}/>;
             })}
         </div>
       </div>

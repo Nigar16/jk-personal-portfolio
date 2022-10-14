@@ -11,6 +11,8 @@ import InlineProjects from "../pages/projects/InlineProjects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectsPage from "../pages/projects/ProjectsPage";
 import ArticlePage from "../pages/articles/ArticlePage";
+import InlineArticle from "../pages/articles/InlineArticle";
+import ArticleItem from "../pages/articles/Article-item";
 const projectTypes = [
   { id: 1, name: "All", isActive: true },
   { id: 2, name: "Ecommerce", isActive: false },
@@ -31,15 +33,18 @@ function App() {
             path="/inline-project/:projectid"
             element={<InlineProjects />}
           />
+          <Route
+            path="/inline-article/:articleid"
+            element={<InlineArticle />}
+          />
           <Route path="/articles" element={<ArticlePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
 
           {/*<Route path="/blog-posts/:courseid" element={<Blog />} />*/}
-
-
         </Routes>
       </LayOut>
     </BrowserRouter>
+    
   );
 }
 

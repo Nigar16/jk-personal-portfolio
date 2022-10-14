@@ -1,6 +1,6 @@
-import image1 from "./assets/images/projectimg1.png"
-import image2 from "./assets/images/projectimg2.png"
-import image3 from "./assets/images/projectimg3.png"
+import image1 from "./assets/images/people.png"
+import image2 from "./assets/images/worldServices.png"
+import image3 from "./assets/images/codeflow.png"
 
 const storagearticles = [
 {

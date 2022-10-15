@@ -11,7 +11,8 @@ const CourseItem = memo(({ item }) => {
     <div
       className={`course-item flex bg-[#F5F8FA] justify-between  rounded-[6px] px-4   h-[100%] py-8  `}
     >
-      <div className=""> 
+      <div className="">
+
         <img className="object-cover h-[100px ] w-[250px]" src={item.image} />
       </div>
       <div className="ml-2 flex flex-col">

@@ -13,10 +13,16 @@ const BlogPosts=()=>{
                     <h2 className='text-[32px]  font-bold leading-12'>Blog posts</h2>
                     <SeeAll navigation='blogs'/>
                 </div>
-                <div className="grid grid-rows-2 grid-flow-col gap-4">
-                    <div className="row-span-2">  <PrimaryCard item={storageBlogs[0]}/></div>
-                    <div className=""><Card item={storageBlogs[1]}/></div>
-                    <div className=" self-end"><Card item={storageBlogs[2]}/></div>
+                <div className="flex justify-between lg:flex-col">
+                    <div className="w-[49%] lg:w-[100%]">  <PrimaryCard item={storageBlogs[0]}/></div>
+                    <div className="w-[49%] flex flex-col justify-between lg:w-[100%] lg:mt-4">
+                        <div>
+                            <Card item={storageBlogs[1]}/>
+                        </div>
+                        <div className="lg:mt-4">
+                            <Card item={storageBlogs[2]}/>
+                        </div>
+                    </div>
                 </div>
             </div>
 

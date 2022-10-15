@@ -1,14 +1,15 @@
 import React,{memo} from "react";
 import {Link} from "react-router-dom";
 import {ReactComponent as Calendar} from "../../assets/icons/iconcalendar.svg";
+import bg from "../../assets/images/BgServices.png";
 
 const PrimaryCard=memo(({ item })=> {
     return (
-        <div className="flex justify-center w-[100%] ">
+        <div className="">
             <div className="rounded-[6px]  bg-[#F5F8FA]  ">
-                <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                    <img className="pt-6 pr-6 pl-6 pb-3 object-cover" src={item.image}/>
-                </a>
+                <div className="mt-6 ml-6 mb-3  rounded-[6px] h-64 w-[92%] bg-cover" style={{ backgroundImage:`url(${item.image})` }}>
+                    {/*<img className="pt-6 pr-6 pl-6 pb-3  rounded-[6px] max-h-64 w-full" src={item.image} alt=''/>*/}
+                </div>
                 <div className='pl-6 flex items-center'>
                     <Calendar className='mr-1 text-[#848D96]'/>
                     <span className='mr-1 text-[#848D96] text-sm'>{item.date}</span>

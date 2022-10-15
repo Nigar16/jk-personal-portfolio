@@ -5,9 +5,10 @@ import {ReactComponent as Calendar} from "../../assets/icons/iconcalendar.svg";
 
 const Card=memo(({ item })=>{
     return (
-        <div className={` flex bg-[#F5F8FA] justify-between  rounded-[6px] p-6  `}>
+        <div>
+        <div className={` flex bg-[#F5F8FA] justify-between rounded-[6px] p-6  `}>
             <div className="w-[40%] ">
-                <img className="object-cover h-[100%] rounded-[6px]" src={item.image} />
+                <img className="object-cover h-[100%] rounded-[6px]" src={item.image} alt=""/>
             </div>
             <div className="ml-2 flex flex-col">
                 <div className=' flex items-center'>
@@ -21,6 +22,7 @@ const Card=memo(({ item })=>{
                 </p>
                 <span  className="mt-5 cursor-pointer text-[#338FE8]"><Link to={`/blog-posts/${item.id}`}>Read more →</Link></span>
             </div>
+        </div>
         </div>
     );
 })

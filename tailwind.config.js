@@ -58,7 +58,7 @@ module.exports = {
       lineHeight: {
         '12': '3rem',
       },
-  
+
     },
   },
   plugins: [],

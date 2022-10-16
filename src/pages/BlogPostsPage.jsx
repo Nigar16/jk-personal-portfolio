@@ -1,5 +1,5 @@
 import React, { memo, useState, useEffect } from "react";
-import Card from "../components/layout/Card";
+import Card from "../components/items/Card";
 import storageblogs from "../storage-blogs";
 
 

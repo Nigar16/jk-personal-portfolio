@@ -8,9 +8,9 @@ import HeroFooter from "./Hero-Footer";
 
 const Hero = () => {
   return (
-    <section className="pt-8 lg:pt-24">
+    <section className="pt-28 pb-4 lg:pt-24">
       <div className="grid items-center  place-items-center lg:grid-cols-1 grid-cols-2">
-        <div>
+        <div className="pr-20"> 
           <h1 className="font-[700] text-[2rem]">Hi, I’m</h1>
           <h1 className="text-[#338FE8] font-[700] text-[4rem]">
             / Javid Khalilov /
@@ -19,7 +19,7 @@ const Hero = () => {
             👨🏻‍💻 {`< Senior Software Developer >`}{" "}
           </p>
 
-          <div className="mt-36 lg:hidden">
+          <div className="pr-20 mt-36 lg:hidden">
             <p className="mb-2">Follow me on</p>
             <div className="flex w-[124px] justify-between items-center">
               <a  href="#" className="cursor-pointer"><Facebook /></a> 

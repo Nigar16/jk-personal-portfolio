@@ -11,7 +11,7 @@ import InlineProjects from "../pages/views/InlineProjects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectsPage from "../pages/projects/ProjectsPage";
 import ArticlePage from "../pages/articles/ArticlePage";
-
+import BlogPostsPage from "../pages/BlogPostsPage";
 import InlineArticle from "../pages/views/InlineArticle";
 import ArticleItem from "../components/items/Article-item";
 
@@ -37,7 +37,7 @@ function App() {
           <Route path="/articles" element={<ArticlePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
 
-          {/*<Route path="/blog-posts/:courseid" element={<Blog />} />*/}
+          <Route path="/blogs" element={<BlogPostsPage />} />
 
 
         </Routes>

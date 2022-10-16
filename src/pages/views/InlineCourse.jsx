@@ -1,6 +1,6 @@
 import React, { memo, useState, useEffect } from "react";
 import img from "../../assets/images/CourseIMg.png";
-import CourseItem from "./Course-Item";
+import CourseItem from "../../components/items/Course-Item";
 
 import { useParams } from "react-router-dom";
 import storageCourses from "../../storage-courses";

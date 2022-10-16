@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/sliderarrow.css"
+import "../../assets/css/sliderarrow.css"
 export default function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (

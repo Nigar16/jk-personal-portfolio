@@ -1,6 +1,6 @@
 import React, { memo, useState, useEffect } from "react";
 import courseimg from "../../assets/images/CourseIMg.png";
-import "../../css/courseItem.css";
+import "../../assets/css/courseItem.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const CourseItem = memo(({ item }) => {

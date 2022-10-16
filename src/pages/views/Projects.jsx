@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ProjectSlider from '../projects/ProjectSlider';
+import ProjectSlider from './ProjectSlider';
  const Projects=()=> {
 
   const navigate=useNavigate()

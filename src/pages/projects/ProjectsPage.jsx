@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ProjectServices from "./ProjectServices";
-import ProjectItem from "./Project-item";
+import ProjectServices from "../views/ProjectServices";
+import ProjectItem from "../../components/items/Project-item";
 import storageprojects from "../../storage-projects";
-import ProjectFilter from "./ProjectFilter";
+
 import { useContext } from "react";
 
 export default function ProjectsPage() {

@@ -1,6 +1,6 @@
 import React from "react";
 import storagearticles from "../../storage-articles";
-import ArticleItem from "./Article-item";
+import ArticleItem from "../../components/items/Article-item";
 
 const ArticlePage = () => {
   return (

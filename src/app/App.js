@@ -3,16 +3,16 @@ import Navbar from "../components/layout/navbar/Navbar";
 import Footer from "../components/layout/Footer";
 import LayOut from "../components/layout/Layout";
 import Course from "../pages/courses/Courses";
-import CourseItem from "../pages/courses/Course-Item";
-import InlineCourse from "../pages/courses/InlineCourse";
-import ScrollToTop from "../components/ScrollToTop";
-import ProjectItem from "../pages/projects/Project-item";
-import InlineProjects from "../pages/projects/InlineProjects";
+import CourseItem from "../components/items/Course-Item";
+import InlineCourse from "../pages/views/InlineCourse";
+import ScrollToTop from "../components/ui/ScrollToTop";
+import ProjectItem from "../components/items/Project-item";
+import InlineProjects from "../pages/views/InlineProjects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectsPage from "../pages/projects/ProjectsPage";
 import ArticlePage from "../pages/articles/ArticlePage";
-import InlineArticle from "../pages/articles/InlineArticle";
-import ArticleItem from "../pages/articles/Article-item";
+import InlineArticle from "../pages/views/InlineArticle";
+import ArticleItem from "../components/items/Article-item";
 const projectTypes = [
   { id: 1, name: "All", isActive: true },
   { id: 2, name: "Ecommerce", isActive: false },

@@ -1,6 +1,6 @@
 import React, { memo, useState, useEffect } from "react";
 import img from "../../assets/images/CourseIMg.png";
-import ProjectItem from "./Project-item";
+import ProjectItem from "../../components/items/Project-item";
 import { useParams } from "react-router-dom";
 import storageprojects from "../../storage-projects";
 
@@ -31,12 +31,7 @@ const InlineProjects = () => {
           </p>
         </div>
       </div>
-
-
         <div className="grid-container pt-32 grid grid-rows-2 mr-auto ml-auto w-[90%]  xl:grid-rows-3 xl:grid-cols-2 lg2:flex lg2:flex-col grid-flow-col place-items-center grid-cols-3 gap-2 ">
-          {/* {getTillNumbers(amount).map((num) => {
-             return  <div><CourseItem /></div>
-          })} */}
           {storageprojects
             .filter((item, index) => index < 5)
             .map((item) => {

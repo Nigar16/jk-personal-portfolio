@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "./Hero";
-import HomeCourses from "./HomeCourses";
+import Hero from "../views/Hero";
+import HomeCourses from "../views/HomeCourses";
 import Services from "../views/Services";
 import AboutMe from "../views/AboutMe";
 
-import Projects from "./Projects";
+import Projects from "../views/Projects";
 
 import BlogPosts from "../views/BlogPosts";
 
@@ -15,11 +15,8 @@ const Home = () => {
       <AboutMe />
       <Projects />
       <Services />
-
       <HomeCourses />
-
-        <BlogPosts/>
-
+      <BlogPosts />
     </div>
   );
 };

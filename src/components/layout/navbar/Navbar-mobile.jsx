@@ -1,8 +1,8 @@
 import React, { useState,memo } from "react";
-import NavbarItems from "./NavbarItems";
-import Logo from "./Logo";
+import NavbarItems from "../../items/NavbarItems";
+import Logo from "../../items/Logo";
 import Button from "../../ui/Button";
-import LanguageChanger from "./LanguageChanger";
+import LanguageChanger from "../../ui/LanguageChanger";
 import { ReactComponent as LangIcon } from "../../../assets/icons/iconlang.svg";
 import { ReactComponent as Phone } from "../../../assets/icons/iconphone.svg";
 import { ReactComponent as Mail } from "../../../assets/icons/iconmail.svg";

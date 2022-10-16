@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import storageprojects from "../../storage-projects";
 import Slider from "react-slick";
-import ProjectItem from "./Project-item";
+import ProjectItem from "../../components/items/Project-item";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SamplePrevArrow from "../../components/ui/SamplePrevArrow";

@@ -15,7 +15,7 @@ const Hero = () => {
           <h1 className="text-[#338FE8] font-[700] text-[4rem]">
             / Javid Khalilov /
           </h1>
-          <p className="font-[700] text-[1.2rem]">
+          <p className="font-[700] text-[#414448] text-[1.2rem]">
             👨🏻‍💻 {`< Senior Software Developer >`}{" "}
           </p>
 

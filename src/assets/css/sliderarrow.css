@@ -1,6 +1,6 @@
  .slick-next:before {
     color: black !important;
-    content: url("../assets/icons/arrow.svg");
+    content: url("../icons/arrow.svg");
     padding-left: 5px;
     position: fixed;
 }
@@ -11,6 +11,5 @@
 }
 
 .slick-list {
-  
 width: 100%;
 } 

@@ -1,6 +1,10 @@
 import React from 'react'
-import ServicesCardList from '../../components/ServicesCardList';
+import ServicesCardList from '../../components/items/ServicesCardList';
 import items from '../../storage-services';
+<<<<<<< HEAD
+=======
+import SeeAll from "../../components/ui/SeeAll";
+>>>>>>> fixed/fileStructure
 import bg from  "../../assets/images/BgServices.png"
 const Services=()=> {
    

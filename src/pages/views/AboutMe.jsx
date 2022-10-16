@@ -1,5 +1,5 @@
 import React from 'react'
-import Skills from '../../components/Skills';
+import Skills from '../../components/items/Skills';
 import postgre from "../../assets/images/postgresql.png";
 import nosql from '../../assets/images/nosql.png';
 import node from '../../assets/images/node.png';

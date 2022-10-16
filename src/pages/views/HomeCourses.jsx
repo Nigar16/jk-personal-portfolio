@@ -1,13 +1,13 @@
 import React, { memo, useEffect } from "react";
-import CourseItem from "../courses/Course-Item";
+import CourseItem from "../../components/items/Course-Item";
 import courseimg from "../../assets/images/CourseIMg.png";
 import getTillNumbers from "../../helpers";
 import helpers from "../../helpers";
 import storageCourses from "../../storage-courses";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import "../../css/homeCourses.css";
-import SeeAll from "../../components/layout/SeeAll";
+import "../../assets/css/homeCourses.css";
+import SeeAll from "../../components/ui/SeeAll";
 const HomeCourses = memo(({ amount = 5 }) => {
   const navigate = useNavigate();
 

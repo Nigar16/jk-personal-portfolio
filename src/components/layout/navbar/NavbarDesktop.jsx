@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "./Logo";
-import NavbarItems from "./NavbarItems";
+import Logo from "../../items/Logo";
+import NavbarItems from "../../items/NavbarItems";
 
-import LanguageChanger from "./LanguageChanger";
+import LanguageChanger from "../../ui/LanguageChanger";
 import Button from "../../ui/Button";
 const Navbar = (props) => {
   return (

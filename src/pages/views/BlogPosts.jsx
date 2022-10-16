@@ -1,9 +1,9 @@
 import React from 'react'
 // import SeeAll from "../../components/layout/SeeAll";
-import PrimaryCard from "../../components/layout/PrimaryCard";
+import PrimaryCard from "../../components/items/PrimaryCard";
 import storageBlogs from "../../storage-blogs";
-import SeeAll from "../../components/layout/SeeAll";
-import Card from "../../components/layout/Card";
+import SeeAll from "../../components/ui/SeeAll";
+import Card from "../../components/items/Card";
 
 const BlogPosts=()=>{
     return(
@@ -25,7 +25,6 @@ const BlogPosts=()=>{
                     </div>
                 </div>
             </div>
-
         </div>
 
 

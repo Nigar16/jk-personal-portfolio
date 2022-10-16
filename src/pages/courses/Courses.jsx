@@ -1,5 +1,5 @@
 import React from "react";
-import CourseItem from "./Course-Item";
+import CourseItem from "../../components/items/Course-Item";
 import storageCourses from "../../storage-courses";
 const Course = () => {
   return (

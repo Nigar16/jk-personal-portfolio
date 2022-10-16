@@ -11,7 +11,7 @@ import ProjectSlider from '../projects/ProjectSlider';
                 <h1 className='font-[700] text-[32px]'>Projects</h1>
                 <span className='cursor-pointer text-[#143068]' onClick={()=>navigate('/projects')}>See all→</span>
             </div>
-            <div><ProjectSlider/></div>
+            <ProjectSlider/>
         </div>
     </section>
   )

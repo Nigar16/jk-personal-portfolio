@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import ProjectItem from "./Project-item";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SamplePrevArrow from "../../components/ui/SamplePrevArrow";
 import SampleNextArrow from "../../components/ui/SampleNextArrow";
 const ProjectSlider = memo(() => {
   const responsive = [
@@ -33,13 +34,14 @@ const ProjectSlider = memo(() => {
     dots: false,
     infinite: true,
     speed: 500,
-    nextArrow: <SampleNextArrow />
-
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow/>
+   
   };
 
 
   return (
-    <div className="pt-4">
+    <div className="pt-4 ">
       <Slider
         responsive={responsive}
         className="mr-auto ml-auto "
@@ -48,9 +50,9 @@ const ProjectSlider = memo(() => {
         {storageprojects
           .map((item, index) => {
             return (
-              <div className="">
+     
                 <ProjectItem item={item} />
-              </div>
+             
             );
           })}
       </Slider>

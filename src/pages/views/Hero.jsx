@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import JGimg from "../../assets/images/Jk.png";
-import { ReactComponent as Facebook } from "../../assets/icons/facebook.svg";
-import { ReactComponent as Linkedin } from "../../assets/icons/Linkedin.svg";
-import { ReactComponent as Instagram } from "../../assets/icons/instagram.svg";
+import { ReactComponent as Facebook } from "../../assets/icons/facebookfooter.svg";
+import { ReactComponent as Linkedin } from "../../assets/icons/linkedinfooter.svg";
+import { ReactComponent as Instagram } from "../../assets/icons/instagramfooter.svg";
 import HeroFooter from "./Hero-Footer";
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
 
           <div className="pr-20 mt-36 lg:hidden">
-            <p className="mb-2">Follow me on</p>
+            <p className="mb-4">Follow me on</p>
             <div className="flex w-[124px] justify-between items-center">
               <a  href="#" className="cursor-pointer"><Facebook /></a> 
               <a  href="#"  className="cursor-pointer"><Linkedin /></a> 

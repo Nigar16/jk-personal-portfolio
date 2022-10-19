@@ -1,6 +1,6 @@
 import React, { memo, useState, useEffect } from "react";
-import Card from "../components/items/Card";
-import storageblogs from "../storage-blogs";
+import Card from "../../components/items/Card";
+import storageblogs from "../../storage-blogs";
 
 
 
@@ -24,7 +24,7 @@ export default function BlogPostsPage(){
             <button
                 id={index}
                 onClick={getValue}
-                className={`hover:bg-[#fff] mx-4 hover:text-[#1E4F99] lg:hover:bg-[#F2FAFF] px-4 py-2 rounded-[6px]  lg:bg-[#338FE8] lg:text-[#fff] ${active}`}
+                className={`hover:bg-[#fff]  mx-4 hover:text-[#1E4F99] lg:hover:bg-[#F2FAFF] px-4 py-2 rounded-[2px]  lg:bg-[#338FE8] lg:text-[#fff] ${active}`}
                 value={category}>
                 {category}
             </button>)

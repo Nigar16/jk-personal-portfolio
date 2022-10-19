@@ -32,4 +32,37 @@
     @apply overflow-x-auto  !important
      
 }
+.filter-button{
+    @apply border-[#C8CBCD] border-r-[1px] last:border-r-0
 }
+}
+.services-section .one{
+   position: absolute;
+   left:15px;
+}
+.services-section .two{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 15px;
+   
+}
+.services-section .three{
+   
+    position: absolute;
+    bottom: 0px;
+    right: 250px;
+   
+}
+.services-section .four{
+   
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+   
+}
+
+.services-section .five{
+    position: absolute;
+    right:15px;
+ }
+ 

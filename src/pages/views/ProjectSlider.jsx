@@ -34,8 +34,8 @@ const ProjectSlider = memo(() => {
     dots: false,
     infinite: true,
     speed: 500,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow/>
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow/>
    
   };
 

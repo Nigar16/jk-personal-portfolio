@@ -5,7 +5,7 @@ const Course = () => {
   return (
     <section className="w-[90%] mr-auto ml-auto pt-24">
       <div className="w-[90%] mr-auto ml-auto">
-        <h1 className="text-[32px] font-[700] pb-4">Courses</h1>
+        <h1 className="text-[32px] font-[700] pb-4">Events</h1>
         <p className="text-[#414448]">
           I'm an enthusiastic and highly motivated Software Engineer experienced
           in developing reliable and user-friendly web-based solutions in

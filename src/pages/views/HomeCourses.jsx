@@ -24,7 +24,7 @@ const HomeCourses = memo(({ amount = 5 }) => {
   return (
     <section className="pt-24 w-[90%] mr-auto ml-auto">
       <div className=" mb-4 items-center mr-auto ml-auto flex justify-between ">
-        <h1 className="font-[700] text-[32px]">Courses</h1>
+        <h1 className="font-[700] text-[32px]">Events</h1>
         <SeeAll navigation="courses" />
       </div>
       <div className={` gap-y-2 gap-x-2 grid grid-cols-3 lg:flex lg:flex-col`}>

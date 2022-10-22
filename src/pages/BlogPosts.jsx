@@ -41,7 +41,7 @@ export default function BlogPosts(){
                     {renderedItems}
                 </div>
             </div>
-            <div className="grid mt-16 place-items-center w-[95%] mr-auto ml-auto gap-y-8 gap-x-4 grid-cols-2 xl:grid-cols-2 lg:flex flex-col">
+            <div className="grid mt-16 place-items-center w-[90%] mr-auto ml-auto gap-y-8 gap-x-4 grid-cols-2 xl:grid-cols-2 lg:flex flex-col">
                 {storage.map((item) => {
                     return <Card item={item} />;
                 })}

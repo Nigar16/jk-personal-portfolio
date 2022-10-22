@@ -16,7 +16,7 @@ const Card=memo(({ item })=>{
                     <span className='mr-1 text-[#848D96] text-sm'>{item.date}</span>
                     <span className='p-1 rounded-[6px] text-xs' style={{ background: `${item.lightcolor}`,color:`${item.darkcolor}` }}>{item.category}</span>
                 </div>
-                <h1 className="font-[700] text-[16px]">{item.title}</h1>
+                <h1 className="font-[700] text-[16px] ">{item.title}</h1>
                 <p className="mt-2  text-[16px]">
                     {item.content.substring(0, 50) + "..."}
                 </p>

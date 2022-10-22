@@ -4,7 +4,7 @@ import ProjectItem from "../../components/items/Project-item";
 import { useParams } from "react-router-dom";
 import storageprojects from "../../storage-projects";
 
-const InlineProjects = () => {
+const InnerProjects = () => {
   const [project, setProject] = useState({});
   const { projectid } = useParams();
 
@@ -42,4 +42,4 @@ const InlineProjects = () => {
   );
 };
 
-export default InlineProjects;
+export default InnerProjects;

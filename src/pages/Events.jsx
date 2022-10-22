@@ -1,7 +1,7 @@
 import React from "react";
-import CourseItem from "../../components/items/Course-Item";
-import storageCourses from "../../storage-courses";
-const Course = () => {
+import CourseItem from "../components/items/Event-Item";
+import storageCourses from "../storage-courses";
+const Events = () => {
   return (
     <section className="w-[90%] mr-auto ml-auto pt-24">
       <div className="w-[90%] mr-auto ml-auto">
@@ -35,4 +35,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default Events;

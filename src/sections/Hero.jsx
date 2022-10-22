@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import JGimg from "../../assets/images/Jk.png";
-import { ReactComponent as Facebook } from "../../assets/icons/facebookfooter.svg";
-import { ReactComponent as Linkedin } from "../../assets/icons/linkedinfooter.svg";
-import { ReactComponent as Instagram } from "../../assets/icons/instagramfooter.svg";
-import HeroFooter from "./Hero-Footer";
+import JGimg from "../assets/images/Jk.png";
+import { ReactComponent as Facebook } from "../assets/icons/facebookfooter.svg";
+import { ReactComponent as Linkedin } from "../assets/icons/linkedinfooter.svg";
+import { ReactComponent as Instagram } from "../assets/icons/instagramfooter.svg";
+import Companies from "../components/items/Companies";
 
 const Hero = () => {
   return (
@@ -22,9 +22,9 @@ const Hero = () => {
           <div className="pr-20 mt-36 lg:hidden">
             <p className="mb-4">Follow me on</p>
             <div className="flex w-[124px] justify-between items-center">
-              <a  href="#" className="cursor-pointer"><Facebook /></a> 
-              <a  href="#"  className="cursor-pointer"><Linkedin /></a> 
-              <a  href="#" className="cursor-pointer"><Instagram /></a> 
+              <a href="src/sections/Hero#" className="cursor-pointer"><Facebook /></a>
+              <a href="src/sections/Hero#" className="cursor-pointer"><Linkedin /></a>
+              <a href="src/sections/Hero#" className="cursor-pointer"><Instagram /></a>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="">
-        <HeroFooter />
+        <Companies />
       </div>
     </section>
   );

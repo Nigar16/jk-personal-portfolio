@@ -1,12 +1,12 @@
 import React, { memo, useState, useEffect } from "react";
-import Card from "../../components/items/Card";
-import storageblogs from "../../storage-blogs";
+import Card from "../components/items/Card";
+import storageblogs from "../storage-blogs";
 
 
 
 
 
-export default function BlogPostsPage(){
+export default function BlogPosts(){
     const categories=["Education",'Technology','Programming',"Tutorials","Blog type1","Blog type2"]
     const [storage, setStorage] = useState(storageblogs);
     const [Active, setActive] = useState(null);

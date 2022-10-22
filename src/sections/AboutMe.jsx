@@ -1,14 +1,14 @@
 import React from 'react'
-import Skills from '../../components/items/Skills';
-import postgre from "../../assets/images/postgresql.png";
-import nosql from '../../assets/images/nosql.png';
-import node from '../../assets/images/node.png';
-import rabbit from '../../assets/images/rabbit.png';
-import sentry from '../../assets/images/sentry.png';
-import nest from '../../assets/images/nest.png';
-import microservices from '../../assets/images/microservices.png';
-import redis from '../../assets/images/redis.png';
-import mongodb from '../../assets/images/mongodb.png'
+import Skills from '../components/items/Skills';
+import postgre from "../assets/images/postgresql.png";
+import nosql from '../assets/images/nosql.png';
+import node from '../assets/images/node.png';
+import rabbit from '../assets/images/rabbit.png';
+import sentry from '../assets/images/sentry.png';
+import nest from '../assets/images/nest.png';
+import microservices from '../assets/images/microservices.png';
+import redis from '../assets/images/redis.png';
+import mongodb from '../assets/images/mongodb.png'
 
 
 const AboutMe=()=> {

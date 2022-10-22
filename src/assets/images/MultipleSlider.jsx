@@ -4,7 +4,7 @@ import Option from "../../components/ui/Option";
 import storageNews from "../../temporary-storage";
 import NewsSliderBoard from "../../components/NewsSliderBoard";
 import { memo } from "react";
-import helpers from "../../helpers";
+import helpers from "../../helpers/helper";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import News from "../../components/News";

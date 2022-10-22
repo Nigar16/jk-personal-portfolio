@@ -1,14 +1,14 @@
 import React, { memo, useEffect } from "react";
-import CourseItem from "../../components/items/Course-Item";
-import courseimg from "../../assets/images/CourseIMg.png";
-import getTillNumbers from "../../helpers";
-import helpers from "../../helpers";
-import storageCourses from "../../storage-courses";
+import courseimg from "../assets/images/CourseIMg.png";
+import getTillNumbers from "../helpers/helper";
+import helpers from "../helpers/helper";
+import storageCourses from "../storage-courses";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import "../../assets/css/homeCourses.css";
-import SeeAll from "../../components/ui/SeeAll";
-const HomeCourses = memo(({ amount = 5 }) => {
+import "../assets/css/homeCourses.css";
+import SeeAll from "../components/ui/SeeAll";
+import EventItem from "../components/items/Event-Item";
+const Events = memo(({ amount = 5 }) => {
   const navigate = useNavigate();
 
   // useEffect(() => {
@@ -34,10 +34,10 @@ const HomeCourses = memo(({ amount = 5 }) => {
         {storageCourses
           .filter((item, index) => index < 5)
           .map((item) => {
-            return <div className={window.innerWidth>=1220 && pathName=="/" && `grid-container`}><CourseItem item={item} /></div>;
+            return <div className={window.innerWidth>=1220 && pathName=="/" && `grid-container`}><EventItem item={item} /></div>;
           })}
       </div>
     </section>
   );
 });
-export default HomeCourses;
+export default Events;

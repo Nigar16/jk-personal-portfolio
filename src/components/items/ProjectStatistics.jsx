@@ -3,7 +3,7 @@ import icon from "../../assets/icons/iconmac.svg";
 import iconsmile from "../../assets/icons/iconsmile.svg";
 import iconclock from "../../assets/icons/iconclock.svg";
 import icondrop from "../../assets/icons/icondrop.svg"
-const ProjectServices = () => {
+const ProjectStatistics = () => {
   return (
     <>
       <div className="z-10 flex px-8 sm:flex-col items-center sm:text-center sm:mb-4">
@@ -41,4 +41,4 @@ const ProjectServices = () => {
   );
 };
 
-export default ProjectServices;
+export default ProjectStatistics;

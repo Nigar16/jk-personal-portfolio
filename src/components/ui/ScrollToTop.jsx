@@ -10,3 +10,5 @@ export default function ScrollToTop() {
 
   return null;
 }
+
+// Do we need this component?

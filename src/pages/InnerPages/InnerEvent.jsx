@@ -1,11 +1,11 @@
 import React, { memo, useState, useEffect } from "react";
 import img from "../../assets/images/CourseIMg.png";
-import CourseItem from "../../components/items/Course-Item";
 
 import { useParams } from "react-router-dom";
 import storageCourses from "../../storage-courses";
+import EventItem from "../../components/items/Event-Item";
 
-const InlineCourse = () => {
+const InnerEvent = () => {
   const [course, setCourse] = useState({});
   const { courseid } = useParams();
 
@@ -41,11 +41,11 @@ const InlineCourse = () => {
           {storageCourses
             .filter((item, index) => index < 5)
             .map((item) => {
-              return <CourseItem item={item} />;
+              return <EventItem item={item} />;
             })}
         </div>
     </section>
   );
 };
 
-export default InlineCourse;
+export default InnerEvent;

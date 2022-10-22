@@ -1,11 +1,11 @@
 import React, { memo } from "react";
 import storageprojects from "../../storage-projects";
 import Slider from "react-slick";
-import ProjectItem from "../../components/items/Project-item";
+import ProjectItem from "./Project-item";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SamplePrevArrow from "../../components/ui/SamplePrevArrow";
-import SampleNextArrow from "../../components/ui/SampleNextArrow";
+import SamplePrevArrow from "../ui/SamplePrevArrow";
+import SampleNextArrow from "../ui/SampleNextArrow";
 const ProjectSlider = memo(() => {
   const responsive = [
     {

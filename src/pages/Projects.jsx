@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import ProjectServices from "../views/ProjectServices";
-import ProjectItem from "../../components/items/Project-item";
-import storageprojects from "../../storage-projects";
-import "../../assets/css/index.css";
+import ProjectStatistics from "../components/items/ProjectStatistics";
+import ProjectItem from "../components/items/Project-item";
+import storageprojects from "../storage-projects";
+import "../index.css";
 import { useContext } from "react";
 
-export default function ProjectsPage() {
+export default function Projects() {
   const [storage, setStorage] = useState(storageprojects);
   const [isActive, setIsActive] = useState(null);
   const categories = [
@@ -46,18 +46,18 @@ export default function ProjectsPage() {
         <div className="rounded-[50%] border-[#338FE8] absolute left-0 translate-x-[-105px]  border-[1px] sm:translate-y-[-70px] w-[150px] h-[150px]  ">
           <div className="rounded-[50%] ml-auto mr-auto border-[#338FE8] mt-[15%] border-[1px] w-[100px] h-[100px]"></div>
         </div>
-        <ProjectServices />
+        <ProjectStatistics />
         <div className="rounded-[50%] border-[#338FE8] absolute right-0 translate-x-[105px]  border-[1px] w-[150px] h-[150px] sm:translate-y-[70px]  ">
           <div className="rounded-[50%] ml-auto mr-auto border-[#338FE8] mt-[15%] border-[1px] w-[100px] h-[100px]"></div>
         </div>
-        <img className="one" src={require("../../assets/images/Vector.png")} />
-        <img className="two" src={require("../../assets/images/Vector.png")} />
+        <img className="one" src={require("../assets/images/Vector.png")} />
+        <img className="two" src={require("../assets/images/Vector.png")} />
         <img
           className="three"
-          src={require("../../assets/images/Vector.png")}
+          src={require("../assets/images/Vector.png")}
         />
-        <img className="four" src={require("../../assets/images/Vector.png")} />
-        <img className="five" src={require("../../assets/images/Vector.png")} />
+        <img className="four" src={require("../assets/images/Vector.png")} />
+        <img className="five" src={require("../assets/images/Vector.png")} />
       </div>
       <div className="lg:w-full w-[88%] relative  container  mt-12 py-2 px-2 bg-[#F2FAFF] mr-auto  ml-auto flex items-center whitespace-nowrap   lg:bg-white justify-between">
         <div className="scroll overflow-auto px-4 w-[100%] container  mr-auto ml-auto lg:overflow-x-auto ml-auto mr-auto flex justify-between">

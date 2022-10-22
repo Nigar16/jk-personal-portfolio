@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavbarMobile from "./Navbar-mobile";
-import helpers from "../../../helpers";
+import helpers from "../../../helpers/helper";
 import Button from "../../ui/Button";
 import NavbarDesktop from "../navbar/NavbarDesktop";
 const Navbar = () => {

@@ -34,11 +34,12 @@ const ProjectSlider = memo(() => {
     dots: false,
     infinite: true,
     speed: 500,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow/>
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow/>
    
   };
 
+  console.log(storageprojects)
 
   return (
     <div className="pt-4 ">
@@ -49,10 +50,9 @@ const ProjectSlider = memo(() => {
       >
         {storageprojects
           .map((item, index) => {
+            console.log(item)
             return (
-     
                 <ProjectItem item={item} />
-             
             );
           })}
       </Slider>

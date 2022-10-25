@@ -1,9 +1,9 @@
 import React, { memo, useState, useEffect } from "react";
 import courseimg from "../../assets/images/CourseIMg.png";
-import "../../css/courseItem.css";
+import "../../assets/css/courseItem.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-const CourseItem = memo(({ item }) => {
+const EventItem = memo(({ item }) => {
   const [Class, setClass] = useState("");
   const pathName = window.location.pathname;
 
@@ -44,4 +44,4 @@ const CourseItem = memo(({ item }) => {
     </section>
   );
 });
-export default CourseItem;
+export default EventItem;

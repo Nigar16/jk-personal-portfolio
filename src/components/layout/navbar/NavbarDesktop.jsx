@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../items/Logo";
+import Logo from "../../ui/Logo";
 import NavbarItems from "../../items/NavbarItems";
 
 import LanguageChanger from "../../ui/LanguageChanger";

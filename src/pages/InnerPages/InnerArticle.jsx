@@ -21,7 +21,7 @@ const InlineArticle = () => {
   return (
     <section className="pt-36">
       <div className="flex  w-[90%] mr-auto ml-auto justify-around lg:flex-col">
-        <div className="w-[100%] mr-auto ml-auto">
+        <div className="w-full mr-auto ml-auto">
           <img
             className="w-[600px] ml-auto mr-auto lg:w-[100%]"
             src={article.image}

@@ -15,3 +15,4 @@ const scrollBottom = (behavior = "auto") => {
 };
 
 export default { getTillNumbers, scrollBottom };
+// Why do we need this file??

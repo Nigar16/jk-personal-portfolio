@@ -1,6 +1,6 @@
 import React, { useState,memo } from "react";
 import NavbarItems from "../../items/NavbarItems";
-import Logo from "../../items/Logo";
+import Logo from "../../ui/Logo";
 import Button from "../../ui/Button";
 import LanguageChanger from "../../ui/LanguageChanger";
 import { ReactComponent as LangIcon } from "../../../assets/icons/iconlang.svg";

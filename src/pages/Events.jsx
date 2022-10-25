@@ -1,11 +1,11 @@
 import React from "react";
-import CourseItem from "../../components/items/Course-Item";
-import storageCourses from "../../storage-courses";
-const Course = () => {
+import CourseItem from "../components/items/Event-Item";
+import storageCourses from "../storage-courses";
+const Events = () => {
   return (
     <section className="w-[90%] mr-auto ml-auto pt-24">
       <div className="w-[90%] mr-auto ml-auto">
-        <h1 className="text-[32px] font-[700] pb-4">Courses</h1>
+        <h1 className="text-[32px] font-[700] pb-4">Events</h1>
         <p className="text-[#414448]">
           I'm an enthusiastic and highly motivated Software Engineer experienced
           in developing reliable and user-friendly web-based solutions in
@@ -35,4 +35,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default Events;

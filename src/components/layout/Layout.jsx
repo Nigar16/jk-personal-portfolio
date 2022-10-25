@@ -8,10 +8,10 @@ import Footer from './Footer'
     <div>
     <Navbar/>
     <main id='main' className=''>
-                <div>
-                    {children}
-                </div>
-            </main>
+        <div>
+            {children}
+        </div>
+    </main>
     <Footer/>
     </div>
   )

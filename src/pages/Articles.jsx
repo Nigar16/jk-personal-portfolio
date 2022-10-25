@@ -1,8 +1,8 @@
 import React from "react";
-import storagearticles from "../../storage-articles";
-import ArticleItem from "../../components/items/Article-item";
+import storagearticles from "../storage-articles";
+import ArticleItem from "../components/items/Article-item";
 
-const ArticlePage = () => {
+const Articles = () => {
   return (
     <section className="pt-36 flex flex-col w-[90%] mr-auto ml-auto">
       <h1 className="text-[32px] mb-8 font-[700] ml-[2%] ">Scientifics Articles</h1>
@@ -15,4 +15,4 @@ const ArticlePage = () => {
   );
 };
 
-export default ArticlePage;
+export default Articles;

@@ -1,9 +1,9 @@
 import React from 'react'
 // import SeeAll from "../../components/layout/SeeAll";
-import PrimaryCard from "../../components/items/PrimaryCard";
-import storageBlogs from "../../storage-blogs";
-import SeeAll from "../../components/ui/SeeAll";
-import Card from "../../components/items/Card";
+import PrimaryCard from "../components/items/PrimaryCard";
+import storageBlogs from "../storage-blogs";
+import SeeAll from "../components/ui/SeeAll";
+import Card from "../components/items/Card";
 
 const BlogPosts=()=>{
     return(

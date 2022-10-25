@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectSlider from "../../components/items/Slider";
+import ProjectSlider from '../../src/components/items/Slider';
 import { useNavigate } from "react-router-dom";
 const Articles = (props) => {
     const navigate=useNavigate();

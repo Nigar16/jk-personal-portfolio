@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavbarMobile from "./Navbar-mobile";
-import helpers from "../../../helpers";
+import helpers from "../../../helpers/helper";
 import Button from "../../ui/Button";
 import NavbarDesktop from "../navbar/NavbarDesktop";
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
   const ContactmeButton= <Button onClick={onArrowClick}>Contact me</Button>
   return (
     <>
-      <div className="fixed z-10 w-full bg-[#fff]">
+      <div className="fixed z-40 w-full bg-[#fff]">
         <div className="block lg:hidden ">
           <NavbarDesktop ContactmeButton={ContactmeButton}/>
         </div>

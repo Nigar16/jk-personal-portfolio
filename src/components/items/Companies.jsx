@@ -6,7 +6,7 @@ import Walk from "../../assets/icons/2walk.svg";
 import Javachip from "../../assets/icons/javachip.svg";
 import Agbank from "../../assets/icons/agbank.svg";
 
-const HeroFooter = () => {
+const Companies = () => {
   const iconData = [
     { id: 1, icon: UfazIcon },
     { id: 2, icon: AzerCosmos },
@@ -32,4 +32,4 @@ const HeroFooter = () => {
   );
 };
 
-export default HeroFooter;
+export default Companies;

@@ -1,15 +1,31 @@
- .slick-next:before {
-    color: black !important;
-    content: url("../icons/arrow.svg");
-    padding-left: 5px;
-    position: fixed;
+
+.slick-prev {
+    padding: 14px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    background-color: #F5F8FA;
+    z-index: 8 !important;
+    top: 30%;
+    left: -1px;
 }
 
- .slick-slide {
-    
-    width: 500px;
+.slick-next{
+  padding: 14px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5vw;
+  background-color: #F5F8FA;
+  z-index: 8 !important;
+  top: 30%;
+  right: 20px;
 }
-
-.slick-list {
-width: 100%;
-} 
+@media   screen and (max-width:1024px ) {
+  .slick-next{
+    right: 5px;
+  }
+}

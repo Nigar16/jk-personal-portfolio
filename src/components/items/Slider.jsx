@@ -8,8 +8,8 @@ import arrow from "../../assets/icons/arrow.svg";
 import "../../assets/css/sliderarrow.css";
 import SamplePrevArrow from "../ui/SamplePrevArrow";
 import SampleNextArrow from "../ui/SampleNextArrow";
-const ProjectSlider = memo((props) => {
 
+const ProjectSlider = (props) => {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <img src={arrow}  alt="prevArrow" {...props} />
   );
@@ -44,7 +44,7 @@ const ProjectSlider = memo((props) => {
     infinite: true,
     speed: 500,
     nextArrow: <SampleNextArrow />,
-     prevArrow: <SlickArrowLeft/>
+    prevArrow: <SlickArrowLeft/>
    
   };
 
@@ -60,6 +60,6 @@ const ProjectSlider = memo((props) => {
       </Slider>
     </div>
   );
-});
+};
 
 export default ProjectSlider;

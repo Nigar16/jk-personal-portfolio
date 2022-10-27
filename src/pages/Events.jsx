@@ -26,8 +26,8 @@ const Events = () => {
 
           {storageCourses
             .filter((item, index) => index < 5)
-            .map((item) => {
-              return <CourseItem item={item}/>;
+            .map((item,index) => {
+              return <CourseItem key={index} item={item}/>;
             })}
         </div>
       </div>

@@ -20,7 +20,6 @@ const Events = memo(({ amount = 5 }) => {
   // }, []);
 
   const pathName = window.location.pathname;
- console.log(window.innerWidth)
   return (
     <section className="pt-24 w-[90%] mr-auto ml-auto">
       <div className=" mb-4 items-center mr-auto ml-auto flex justify-between ">
@@ -33,8 +32,8 @@ const Events = memo(({ amount = 5 }) => {
           })} */}
         {storageCourses
           .filter((item, index) => index < 5)
-          .map((item) => {
-            return <div className={window.innerWidth>=1220 && pathName=="/" && `grid-container`}><EventItem item={item} /></div>;
+          .map((item,index) => {
+            return <div key={index} className={window.innerWidth>=1220 && pathName=="/" && `grid-container`}><EventItem item={item} /></div>;
           })}
       </div>
     </section>

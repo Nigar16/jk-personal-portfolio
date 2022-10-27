@@ -2,8 +2,7 @@ import React from "react";
 
 export default function ServicesCardList({ items }) {
   const renderedItems = items.map((item, index) => {
-    console.log(item.lightcolor);
-
+  
     return (
       <div className="w-[100%] " key={index}>
       

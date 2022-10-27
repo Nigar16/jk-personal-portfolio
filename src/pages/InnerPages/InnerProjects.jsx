@@ -13,7 +13,6 @@ const InnerProjects = () => {
       (item) => item.id === parseInt(projectid)
     );
     setProject(newProduct);
-    console.log(project);
   };
   useEffect(() => {
     getCourses();

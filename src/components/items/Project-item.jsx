@@ -1,7 +1,6 @@
 import React,{memo} from "react";
 import { Link } from "react-router-dom";
 const ProjectItem = memo(({item}) => {
-  console.log(item)
   return (
     <div className="flex  items-center flex-col  mx-4 w-[384px] lg:w-[100%]">
       <div>

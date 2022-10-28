@@ -1,0 +1,39 @@
+.wrapper {
+	position: relative;
+	
+	}
+	.wrapper:before,
+	:after {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		content: "";
+		display: block;
+		width: 20px;
+		height: 100%;
+	
+	}
+	.items {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		font-size: 0;
+		cursor: pointer;
+		
+		
+	}   
+	.items .active {
+		cursor: grab;
+	}
+	.item {
+		display: inline-block;
+		margin-left: 20px;
+		user-select: none;
+		width: 20%;
+		height: 100%;
+		color: #222;
+		font-size: 33px;
+		font-weight: bold;
+		line-height: 130px;
+	}

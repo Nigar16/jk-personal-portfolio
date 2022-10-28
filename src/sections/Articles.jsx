@@ -7,7 +7,7 @@ const Articles = (props) => {
     <section className="w-[90%] py-20  mt-4 mr-auto ml-auto">
       <div>
         <div className="flex justify-between items-center px-4">
-          <h1 className="font-[700] text-[32px]">Articles</h1>
+          <h1 className="font-[700] text-[32px]">Scientifics articles</h1>
           <span
             className="cursor-pointer text-[#143068]"
             onClick={() => navigate("/articles")}

@@ -2,7 +2,7 @@ import React,{memo} from "react";
 import { Link } from "react-router-dom";
 const ProjectItem = memo(({item}) => {
   return (
-    <div className="flex  items-center flex-col  mx-4 w-[384px] lg:w-[100%]">
+    <div className="project-item flex  items-center flex-col  mx-4 w-[384px] lg:w-[100%]">
       <div>
         <img src={item.image} className="rounded-t-[6px]" alt="projectimage" />
       </div>

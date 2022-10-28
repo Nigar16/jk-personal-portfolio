@@ -43,6 +43,13 @@ const Companies = () => {
         slidesToScroll: 3,
       },
     },
+    {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
   ];
 
   const settings = {
@@ -60,7 +67,7 @@ const Companies = () => {
           <Slider arrows={false} {...settings} responsive={responsive}>
             {iconData.map((item, index) => {
               return (
-                <div key={item.id} className=" pb-4 pt-8 text-center">
+                <div key={item.id} className=" pb-4 pt-8 text-center align-center">
                   <img src={item.icon} className=" mr-auto ml-auto" />
                 </div>
               );

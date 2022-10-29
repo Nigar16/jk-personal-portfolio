@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 
 const Filter=({categories,parentCallback,localStorage})=>{
+    console.log(categories)
+    console.log(localStorage)
+
     const [Active, setActive] = useState(null);
     const getValue = (e) => {
+       
         const currentValue = e.target.value;
         const filteredStorage = localStorage.filter((item) => {
             return item.category === currentValue;
         });
+        console.log(filteredStorage)
 
         parentCallback(filteredStorage);
         setActive(filteredStorage[0].category);
     };
-
+ 
     const renderedItems=categories.map((category,index)=>{
         const active=category===Active?'bg-[#fff] text-[#1E4F99] border-none rounded-[6px] ':'';
         return (

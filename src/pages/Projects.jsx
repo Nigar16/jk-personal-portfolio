@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import ProjectStatistics from "../components/items/ProjectStatistics";
 import ProjectItem from "../components/items/Project-item";
 import storageprojects from "../storage-projects";
-import "../assets/css/sliderarrow.css"
+import Filter from "../components/ui/Filter";
+import "../assets/css/sliderarrow.css";
 import "../index.css";
 import { useContext } from "react";
 
 export default function Projects() {
-  const [storage, setStorage] = useState(storageprojects);
-  const [isActive, setIsActive] = useState(null);
   const categories = [
     "Ecommerce",
     "Portfolio",
@@ -16,19 +15,14 @@ export default function Projects() {
     "type3",
     "type4",
     "type5",
-    "type6"
+    "type6",
   ];
-
-  const getValue = (e) => {
-    const currentValue = e.target.value;
-    const filteredStorage = storageprojects.filter((item) => {
-      return item.type === currentValue;
-    });
-    setIsActive(filteredStorage[0].type);
-    setStorage(filteredStorage);
+  const [storage, setStorage] = useState(storageprojects);
+  const handleCallback = (data) => {
+    setStorage(data);
   };
-  console.log(isActive)
-  
+  const [isActive, setIsActive] = useState(null);
+
   return (
     <section className="pt-24">
       <div className="w-[90%] mr-auto ml-auto flex flex-col ">
@@ -53,87 +47,22 @@ export default function Projects() {
         </div>
         <img className="one" src={require("../assets/images/Vector.png")} />
         <img className="two" src={require("../assets/images/Vector.png")} />
-        <img
-          className="three"
-          src={require("../assets/images/Vector.png")}
-        />
+        <img className="three" src={require("../assets/images/Vector.png")} />
         <img className="four" src={require("../assets/images/Vector.png")} />
         <img className="five" src={require("../assets/images/Vector.png")} />
       </div>
       <div className="lg:w-full w-[90%] relative  container  mt-12 py-2  bg-[#F2FAFF] mr-auto  ml-auto flex items-center whitespace-nowrap   lg:bg-white justify-between">
         <div className="scroll overflow-auto px-4 w-[100%] container  mr-auto ml-auto lg:overflow-x-auto ml-auto mr-auto flex justify-between">
-          
-          {categories.map((type, index) => {
-            const active=type===isActive?'bg-[#fff] text-[#1E4F99] border-none rounded-[6px] ':'';
-            return (
-              <>
-              <button
-                id={index}
-                onClick={getValue}
-                value={type}
-                className={`filter-button   hover:text-[#1E4F99] lg:hover:bg-[#F2FAFF] px-12 py-2  lg:bg-[#338FE8] lg:text-[#fff] ${active}`}
-              >
-                {type}
-              </button>
-              
-              </>
-            );
-          })}
-
-          {/* <button
-            id="1"
-            onClick={getValue}
-            className={`${isActive} hover:bg-[#fff] mx-4 hover:text-[#1E4F99] lg:hover:bg-[#F2FAFF] px-4 py-2 rounded-[6px]  lg:bg-[#338FE8] lg:text-[#fff]`}
-            value={"Ecommerce"}
-          >
-            Ecommerce
-          </button>
-          <button
-            id="2"
-            onClick={getValue}
-            className={`hover:bg-[#fff] mx-4 hover:text-[#1E4F99] lg:hover:bg-[#F2FAFF] px-4 py-2 rounded-[6px] lg:bg-[#338FE8] lg:text-[#fff]`}
-            value={"Portfolio"}
-          >
-            Portfolio
-          </button>
-          <button
-            id="3"
-            onClick={getValue}
-            className="hover:bg-[#fff] mx-4 hover:text-[#1E4F99] px-4 py-2 lg:hover:bg-[#F2FAFF] rounded-[6px] lg:bg-[#338FE8] lg:text-[#fff]"
-            value={"Blog"}
-          >
-            Blog
-          </button>
-
-          <button
-            id="4"
-            onClick={getValue}
-            className="hover:bg-[#fff] mx-4 hover:text-[#1E4F99] px-4 py-2 rounded-[6px] lg:bg-[#338FE8] lg:hover:bg-[#F2FAFF] lg:text-[#fff]"
-            value={"Portfolio"}
-          >
-            Portfolio
-          </button>
-          <button
-            id="5"
-            onClick={getValue}
-            className="hover:bg-[#fff] mx-4 hover:text-[#1E4F99] px-4 py-2 rounded-[6px] lg:bg-[#338FE8] lg:hover:bg-[#F2FAFF] lg:text-[#fff]"
-            value={"Blog"}
-          >
-            Portfolio
-          </button>
-          <button
-            id="6"
-            onClick={getValue}
-            className="hover:bg-[#fff] mx-4 hover:text-[#1E4F99] lg:hover:bg-[#F2FAFF] px-4 py-2 rounded-[6px] lg:bg-[#338FE8] lg:text-[#fff]"
-            value={"Ecommerce"}
-          >
-            Ecommerce
-          </button> */}
+          <Filter
+            categories={categories}
+            parentCallback={handleCallback}
+            localStorage={storageprojects}
+          />
         </div>
       </div>
       <div className="grid grid-flow-auto mt-16  place-items-center w-[90%]  mr-auto ml-auto gap-y-8 gap-x-6 grid-cols-3 xl:grid-cols-2 lg:flex flex-col">
         {storage.map((item) => {
-          return <div className=""><ProjectItem item={item} /></div> ;
+          return <ProjectItem item={item} />;
         })}
       </div>
     </section>

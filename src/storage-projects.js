@@ -5,7 +5,7 @@ const storageprojects = [
   {
     id: 1,
     image: image1, 
-    type: "Ecommerce",
+    category: "Ecommerce",
     title: "Courier App for Caspian Delivery Service",
     content:
       "Writing new APIs, Fixing bugs, Research, Query optimization, Writing tests",
@@ -13,7 +13,7 @@ const storageprojects = [
   {
     id: 2,
     image: image2,
-    type: "Portfolio",
+    category: "Portfolio",
     title: "Courier App for Caspian Delivery Service",
     content:
       "Writing new APIs, Fixing bugs, Research, Query optimization, Writing tests",
@@ -21,7 +21,7 @@ const storageprojects = [
   {
     id: 3,
     image: image3,
-    type: "Blog",
+    category: "Blog",
     title: "Courier App for Caspian Delivery Service",
     content:
       "Writing new APIs, Fixing bugs, Research, Query optimization, Writing tests",
@@ -29,7 +29,7 @@ const storageprojects = [
   {
     id: 4,
     image: image1, 
-    type: "Ecommerce",
+    category: "Ecommerce",
     title: "Courier App for Caspian Delivery Service",
     content:
       "Writing new APIs, Fixing bugs, Research, Query optimization, Writing tests",
@@ -37,7 +37,7 @@ const storageprojects = [
   {
     id: 5,
     image: image2, 
-    type: "Ecommerce",
+    category: "Ecommerce",
     title: "Courier App for Caspian Delivery Service",
     content:
       "Writing new APIs, Fixing bugs, Research, Query optimization, Writing tests",

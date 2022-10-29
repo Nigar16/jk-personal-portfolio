@@ -3,7 +3,7 @@ import CourseItem from "../components/items/Event-Item";
 import storageCourses from "../storage-courses";
 const Events = () => {
   return (
-    <section className="w-[90%] mr-auto ml-auto pt-24">
+    <section className="w-[100%] mr-auto ml-auto pt-24">
       <div className="w-[90%] mr-auto ml-auto">
         <h1 className="text-[32px] font-[700] pb-4">Events</h1>
         <p className="text-[#414448]">

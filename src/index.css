@@ -13,9 +13,9 @@
 @layer base{
 
     *{
-        @apply overflow-x-hidden
+        @apply overflow-x-hidden 
     }
-   
+
 }
 @layer components{
 .navlinkDesk{

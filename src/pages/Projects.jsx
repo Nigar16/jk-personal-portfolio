@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProjectStatistics from "../components/items/ProjectStatistics";
 import ProjectItem from "../components/items/Project-item";
 import storageprojects from "../storage-projects";
+import "../assets/css/sliderarrow.css"
 import "../index.css";
 import { useContext } from "react";
 
@@ -59,7 +60,7 @@ export default function Projects() {
         <img className="four" src={require("../assets/images/Vector.png")} />
         <img className="five" src={require("../assets/images/Vector.png")} />
       </div>
-      <div className="lg:w-full w-[88%] relative  container  mt-12 py-2 px-2 bg-[#F2FAFF] mr-auto  ml-auto flex items-center whitespace-nowrap   lg:bg-white justify-between">
+      <div className="lg:w-full w-[90%] relative  container  mt-12 py-2  bg-[#F2FAFF] mr-auto  ml-auto flex items-center whitespace-nowrap   lg:bg-white justify-between">
         <div className="scroll overflow-auto px-4 w-[100%] container  mr-auto ml-auto lg:overflow-x-auto ml-auto mr-auto flex justify-between">
           
           {categories.map((type, index) => {
@@ -130,9 +131,9 @@ export default function Projects() {
           </button> */}
         </div>
       </div>
-      <div className="grid mt-16 place-items-center w-[90%]  mr-auto ml-auto gap-y-8 gap-x-4 grid-cols-3 xl:grid-cols-2 lg:flex flex-col">
+      <div className="grid grid-flow-auto mt-16  place-items-center w-[90%]  mr-auto ml-auto gap-y-8 gap-x-6 grid-cols-3 xl:grid-cols-2 lg:flex flex-col">
         {storage.map((item) => {
-          return <ProjectItem item={item} />;
+          return <div className=""><ProjectItem item={item} /></div> ;
         })}
       </div>
     </section>

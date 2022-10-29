@@ -20,8 +20,8 @@ function NavbarMobile(props) {
   return (
     <>
       <nav className="bg-nav-bg py-4 px-2 z-50  items-center flex justify-between">
-        <Logo/>
-
+         <Logo/>
+ 
         <div className="h-[40px] flex items-center flex-row-reverse">
           {isItemVisible && (
             <svg

@@ -5,7 +5,6 @@ import UfazIcon from "../../assets/icons/ufaz.svg";
 import Walk from "../../assets/icons/2walk.svg";
 import Javachip from "../../assets/icons/javachip.svg";
 import Agbank from "../../assets/icons/agbank.svg";
-import "../../assets/css/companies.css";
 import Slider from "react-slick";
 const Companies = () => {
   const iconData = [
@@ -25,7 +24,7 @@ const Companies = () => {
     {
       breakpoint: 3000,
       settings: {
-        slidesToShow: 6,
+        slidesToShow: 7,
         slidesToScroll: 6,
       },
     },
@@ -60,15 +59,15 @@ const Companies = () => {
     slidesToScroll: 6,
   };
   return (
-    <section className="flex flex-col  bg-[#143068]">
-      <h1 className="pt-6 pl-8 text-[#338FE8]">/ Cooperated companies</h1>
-      <div className=" w-full  mr-auto ml-auto">
+    <section className="flex flex-col  bg-[#143068] w-[90%] mr-auto ml-auto">
+      <h1 className="pt-6  text-[#338FE8] ">/ Cooperated companies</h1>
+      <div className=" w-full  mr-auto ml-auto ">
         <div className="text-center ">
           <Slider arrows={false} {...settings} responsive={responsive}>
             {iconData.map((item, index) => {
               return (
                 <div key={item.id} className=" pb-4 pt-8 text-center align-center">
-                  <img src={item.icon} className=" mr-auto ml-auto" />
+                  <img src={item.icon} className=" " />
                 </div>
               );
             })}

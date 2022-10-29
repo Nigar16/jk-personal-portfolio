@@ -1,0 +1,5 @@
+.container-grid:first-child{
+    
+display: grid;
+grid-column-start: auto;
+}

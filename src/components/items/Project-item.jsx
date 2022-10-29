@@ -1,10 +1,15 @@
 import React,{memo} from "react";
 import { Link } from "react-router-dom";
+import "../../assets/css/slider.css"
 const ProjectItem = memo(({item}) => {
+
+const pathName = window.location.pathname;
+
   return (
-    <div className="project-item flex  items-center flex-col  mx-4 w-[384px] lg:w-[100%]">
+   
+    <div className={`project-item flex  items-center flex-col mx-4 w-[384px] w-cover lg:w-[100%]`}>
       <div>
-        <img src={item.image} className="rounded-t-[6px]" alt="projectimage" />
+        <img src={item.image} className="rounded-t-[6px] project-image" alt="projectimage" />
       </div>
       <div className="p-4 rounded-b-[6px]  w-[384px]  bg-[#F5F8FA]">
         <span className="text-[#848D96] font-[400]">#bootstrap #react #css #html #javascript</span>

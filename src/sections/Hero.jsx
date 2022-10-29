@@ -8,9 +8,9 @@ import Companies from "../components/items/Companies";
 
 const Hero = () => {
   return (
-    <section className="pt-28 pb-4 lg:pt-24">
-      <div className="grid items-center  place-items-center lg:grid-cols-1 grid-cols-2">
-        <div className="pr-20"> 
+    <section className="pt-28 pb-8 lg:pt-24">
+      <div className="w-[90%] mr-auto ml-auto grid items-center  lg:place-items-center lg:grid-cols-1 grid-cols-2">
+        <div className=""> 
           <h1 className="font-[700] text-[2rem]">Hi, I’m</h1>
           <h1 className="text-[#338FE8] font-[700] text-[4rem]">
             / Javid Khalilov /
@@ -28,11 +28,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="pl-20 lg:pl-0">
           <img src={JGimg} alt="myIMage" />
         </div>
       </div>
-      <div className="">
+      <div className="w-full  bg-[#143068]">
         <Companies />
       </div>
     </section>

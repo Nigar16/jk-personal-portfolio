@@ -4,7 +4,7 @@ export default function ServicesCardList({ items }) {
   const renderedItems = items.map((item, index) => {
   
     return (
-      <div className="w-[100%] " key={index}>
+      <div className="w-[100%] z-[5]" key={index}>
       
         <div
           style={{ background: `${item.lightcolor}` }}

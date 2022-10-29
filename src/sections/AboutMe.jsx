@@ -51,7 +51,7 @@ const AboutMe=()=> {
         },
     ]
   return (
-    <div className=' w-[90%] ml-auto mr-auto  mt-28'>
+    <div className=' w-[90%] ml-auto mr-auto  mt-28 mb-24'>
         <h2 className='text-[32px]  font-bold leading-12'>About Me & Skills</h2>
         <div className='flex justify-between mt-4 lg:flex-col '>
             <div className='w-1/2 lg:w-full'>

@@ -14,6 +14,7 @@ import Articles from "./pages/Articles";
 import BlogPosts from "./pages/BlogPosts";
 import InlineArticle from "./pages/InnerPages/InnerArticle";
 import ArticleItem from "./components/items/Article-item";
+import InnerBlog from "./pages/InnerPages/InnerBlog";
 
 const projectTypes = [
   { id: 1, name: "All", isActive: true },
@@ -33,6 +34,10 @@ function App() {
           <Route
             path="/inline-project/:projectid"
             element={<InnerProjects />}
+          />
+          <Route
+              path="/blog-posts/:blogid"
+              element={<InnerBlog />}
           />
           <Route path="/articles" element={<Articles />} />
           <Route path="/projects" element={<Projects />} />

@@ -14,7 +14,7 @@ const ProjectSlider = (props) => {
     <img src={arrow}  alt="prevArrow" {...props} />
   );
   const SampleNextArrow = ({ currentSlide, slideCount, ...props }) => (
-    <img src={arrow}  alt="prevArrow" {...props} />
+    <img src={arrow}  alt="nextArrow" {...props} />
   );
   const responsive = [
     {

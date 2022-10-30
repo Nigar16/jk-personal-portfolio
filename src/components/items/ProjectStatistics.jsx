@@ -6,7 +6,7 @@ import icondrop from "../../assets/icons/icondrop.svg"
 const ProjectStatistics = () => {
   return (
     <>
-      <div className="z-10 flex px-8 sm:flex-col items-center sm:text-center sm:mb-4">
+      <div className="z-10 flex  sm:flex-col items-center sm:text-center sm:mb-4">
         <img className="w-[50px]" className="bg-[#338FE8] p-[14px] rounded-[6px]" src={icon} />
         <div className="pl-4 text-[#fff] ">
           <h1 className="text-[32px] font-[700]">500+</h1>
@@ -14,7 +14,7 @@ const ProjectStatistics = () => {
         </div>
       </div>
 
-      <div className="z-10 flex px-8 sm:flex-col items-center sm:text-center sm:mb-4">
+      <div className="z-10 flex  sm:flex-col items-center sm:text-center sm:mb-4">
         <img src={iconsmile} className="bg-[#338FE8] p-[14px] rounded-[6px]" />
         <div className="pl-4 text-[#fff] ">
           <h1 className="text-[32px] font-[700]">500+</h1>
@@ -22,7 +22,7 @@ const ProjectStatistics = () => {
         </div>
       </div>
 
-      <div className="z-10 flex px-8 sm:flex-col items-center sm:text-center">
+      <div className="z-10 flex  sm:flex-col items-center sm:text-center">
         <img src={iconclock}  className="bg-[#338FE8] p-[14px] rounded-[6px]"/>
         <div className="pl-4 text-[#fff] ">
           <h1 className="text-[32px] font-[700]">1000+</h1>
@@ -30,7 +30,7 @@ const ProjectStatistics = () => {
         </div>
       </div>
 
-      <div className="z-10 flex px-8 sm:flex-col items-center sm:text-center">
+      <div className="z-10 flex w-cover sm:flex-col  items-center sm:text-center">
         <img src={icondrop} className="bg-[#338FE8] p-[14px] rounded-[6px]"/>
         <div className="pl-4 text-[#fff] ">
           <h1 className="text-[32px] font-[700]">350+</h1>

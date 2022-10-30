@@ -6,12 +6,12 @@ import { memo } from "react";
 const ArticleItem = memo(({item}) => {
 
   return (
-    <div>
-      <div className="flex  items-center flex-col  mx-4 w-[384px] lg:w-[100%]">
-        <div>
-          <img src={item.image} alt="projectimage" />
+   
+      <div className="project-item flex  items-center flex-col mx-2   w-cover lg:w-[100%]">
+        <div className="">
+          <img src={item.image} alt="projectimage" className="object-cover rounded-tr-[6px]  w-[1000px]" />
         </div>
-        <div className="p-4  w-[384px]  bg-[#F5F8FA]">
+        <div className="p-4  w-full  bg-[#F5F8FA]">
           <span className="text-[#848D96] font-[400]">
             #bootstrap #react #css #html #javascript
           </span>
@@ -22,7 +22,6 @@ const ArticleItem = memo(({item}) => {
           </span>
         </div>
       </div>
-    </div>
   );
 });
 

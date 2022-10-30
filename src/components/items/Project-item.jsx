@@ -7,11 +7,11 @@ const pathName = window.location.pathname;
 
   return (
    
-    <div className={`project-item flex  items-center flex-col mx-4 w-[384px] w-cover lg:w-[100%]`}>
+    <div className={`project-item flex  items-center flex-col mx-2   w-cover lg:w-[100%]`}>
       <div>
-        <img src={item.image} className="rounded-t-[6px] project-image" alt="projectimage" />
+        <img src={item.image} className="rounded-t-[6px] object-cover w-[1000vw]  project-image" alt="projectimage" />
       </div>
-      <div className="p-4 rounded-b-[6px]  w-[384px]  bg-[#F5F8FA]">
+      <div className="p-4 rounded-b-[6px] w-full   bg-[#F5F8FA]">
         <span className="text-[#848D96] font-[400]">#bootstrap #react #css #html #javascript</span>
         <h1 className="font-[700] text-2 my-2"> {item.title}</h1>
         <p className="mb-4">{item.content}</p>

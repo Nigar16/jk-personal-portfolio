@@ -20,14 +20,11 @@ const Events = () => {
       <div className=" w-[90%] mr-auto ml-auto pt-16"> 
         
         <div className="grid grid-cols-2  mr-auto ml-auto xl:flex flex-col     place-items-center  gap-2 ">
-          {/* {getTillNumbers(amount).map((num) => {
-             return  <div><CourseItem /></div>
-          })} */}
 
           {storageCourses
             .filter((item, index) => index < 5)
             .map((item,index) => {
-              return <div className="rounded-[6px] w-full"><CourseItem key={index} item={item}/></div> ;
+              return <div key={index} className="rounded-[6px] w-full"><CourseItem  item={item}/></div> ;
             })}
         </div>
       </div>

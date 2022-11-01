@@ -37,7 +37,8 @@ export default function Projects() {
           am a quick learner and experienced at problem-solving.
         </p>
       </div>
-      <div className="services-section  relative grid  grid-cols-4 lg:grid-cols-2 place-items-center  sm:flex-col  py-8 w-[100%] mr-auto ml-auto bg-[#1E4F99] overflow-hidden    my-24">
+      <div className="bg-[#1E4F99] relative my-12">
+      <div className="services-section    flex justify-between  lg:grid lg:grid-cols-2 place-items-center  sm:flex-col  py-8 w-[90%] mr-auto ml-auto overflow-hidden    my-4">
         <div className="rounded-[50%] border-[#338FE8] absolute left-0 translate-x-[-105px]  border-[1px] sm:translate-y-[-70px] w-[150px] h-[150px]  ">
           <div className="rounded-[50%] ml-auto mr-auto border-[#338FE8] mt-[15%] border-[1px] w-[100px] h-[100px]"></div>
         </div>
@@ -51,8 +52,9 @@ export default function Projects() {
         <img className="four" src={require("../assets/images/Vector.png")} />
         <img className="five" src={require("../assets/images/Vector.png")} />
       </div>
+      </div>
       <div className="lg:w-full w-[90%] relative  container  mt-12 py-2  bg-[#F2FAFF] mr-auto  ml-auto flex items-center whitespace-nowrap   lg:bg-white justify-between">
-        <div className="scroll overflow-auto px-4 w-[100%] container  mr-auto ml-auto lg:overflow-x-auto ml-auto mr-auto flex justify-between">
+        <div className="scroll  overflow-auto px-4 w-[100%] container  mr-auto ml-auto lg:overflow-x-auto ml-auto mr-auto flex justify-between">
           <Filter
             categories={categories}
             parentCallback={handleCallback}
@@ -61,8 +63,8 @@ export default function Projects() {
         </div>
       </div>
       <div className="grid grid-flow-auto mt-16 justify-items-stretch  place-items-center w-[90%]  mr-auto ml-auto gap-y-8 gap-x-6 grid-cols-3 xl:grid-cols-2 lg:flex flex-col">
-        {storage.map((item) => {
-          return <ProjectItem item={item} />;
+        {storage.map((item,index) => {
+          return <ProjectItem key={index} item={item} />;
         })}
       </div>
     </section>

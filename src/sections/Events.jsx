@@ -7,7 +7,7 @@ const Events = memo(({ amount = 5 }) => {
 
   const pathName = window.location.pathname;
   return (
-    <section className="pt-24 w-[90%] mr-auto ml-auto">
+    <section className="pt-[128px] w-[90%] mr-auto ml-auto">
       <div className=" mb-4 items-center mr-auto ml-auto flex justify-between ">
         <h1 className="font-[700] text-[32px]">Events</h1>
         <SeeAll navigation="courses" />

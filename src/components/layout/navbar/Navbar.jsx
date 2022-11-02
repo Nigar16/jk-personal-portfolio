@@ -1,12 +1,17 @@
 import React from "react";
 import NavbarMobile from "./Navbar-mobile";
-import helpers from "../../../helpers/helper";
 import Button from "../../ui/Button";
 import NavbarDesktop from "../navbar/NavbarDesktop";
 const Navbar = () => {
-
+  const scrollBottom = (behavior = "auto") => {
+      window.scroll({
+        top:  100000,
+        left: 0,
+        behavior,
+      });
+    };
   const onArrowClick = () => {
-    helpers.scrollBottom('smooth')
+    scrollBottom("smooth")
 }
 
   const ContactmeButton= <Button onClick={onArrowClick}>Contact me</Button>

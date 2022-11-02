@@ -7,8 +7,8 @@ import { ReactComponent as Mail } from "../../assets/icons/iconmail.svg";
 import Button from "../ui/Button";
 const Footer = () => {
   return (
-    <footer className=" w-full pt-28 bottom-0"> 
-    <div className="px-4 pt-12 flex w-[90%] mr-auto ml-auto justify-between lg:flex-col">
+    <footer className=" w-full pt-[132px] bottom-0"> 
+    <div className="  flex w-[90%] mr-auto ml-auto justify-between lg:flex-col">
       <div className="flex lg:mb-16  flex-col">
         <div>
           <span className="text-[16px] mb-8 text-[#338FE8] font-[600]">Contact me</span>

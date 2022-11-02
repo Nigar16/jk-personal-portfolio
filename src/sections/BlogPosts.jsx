@@ -7,7 +7,7 @@ import Card from "../components/items/Card";
 
 const BlogPosts=()=>{
     return(
-        <div className=' mt-24' >
+        <div className='pt-[104px]' >
             <div className='w-[90%] ml-auto mr-auto '>
                 <div className='flex justify-between items-end mb-8'>
                     <h2 className='text-[32px]  font-bold leading-12'>Blog posts</h2>

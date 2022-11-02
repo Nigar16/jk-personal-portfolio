@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Articles = (props) => {
     const navigate=useNavigate();
   return (
-    <section className="w-[90%] py-20  mt-4 mr-auto ml-auto">
+    <section className="w-[90%] pt-[128px]  mr-auto ml-auto">
       <div>
         <div className="flex justify-between items-center px-2">
           <h1 className="font-[700] text-[32px]">Scientifics articles</h1>

@@ -49,7 +49,7 @@ const ProjectSlider = (props) => {
     <div className="card__container   pt-4">
       <Slider
         responsive={responsive}
-        className="card_container_inner"
+        className="card__container__inner"
         {...settings}
       >
         {props.items}

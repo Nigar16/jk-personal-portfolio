@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AzerCosmos from "../../assets/icons/iconazercosmos.svg";
 import P from "../../assets/icons/p.svg";
 import UfazIcon from "../../assets/icons/ufaz.svg";
@@ -6,18 +6,21 @@ import Walk from "../../assets/icons/2walk.svg";
 import Javachip from "../../assets/icons/javachip.svg";
 import Agbank from "../../assets/icons/agbank.svg";
 import Slider from "react-slick";
+// import { ReactComponent as Agbank } from "../../assets/icons/agbank.svg";
+
 const Companies = () => {
   const iconData = [
     { id: 2, icon: AzerCosmos },
     { id: 3, icon: Walk },
     { id: 4, icon: Javachip },
     { id: 5, icon: Agbank },
-    { id: 6, icon: P },
-    { id: 7, icon: AzerCosmos },
-    { id: 8, icon: Walk },
-    { id: 9, icon: Javachip },
-    { id: 10, icon: Agbank },
-    { id: 11, icon: P },
+    { id: 6, icon: UfazIcon },
+    { id: 7, icon: P },
+    { id: 8, icon: AzerCosmos },
+    { id: 9, icon: Walk },
+    { id: 10, icon: Javachip },
+    { id: 11, icon: Agbank },
+    { id: 12, icon: P },
   ];
 
   const responsive = [
@@ -67,7 +70,7 @@ const Companies = () => {
             {iconData.map((item, index) => {
               return (
                 <div key={item.id} className=" pb-4 pt-8 text-center align-center">
-                  <img src={item.icon} className=" " />
+                  <img alt="company" src={item.icon} className=" " />
                 </div>
               );
             })}

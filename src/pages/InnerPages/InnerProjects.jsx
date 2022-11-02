@@ -1,5 +1,4 @@
-import React, { memo, useState, useEffect } from "react";
-import img from "../../assets/images/CourseIMg.png";
+import React, {useState, useEffect } from "react";
 import ProjectItem from "../../components/items/Project-item";
 import { useParams } from "react-router-dom";
 import storageprojects from "../../storage-projects";
@@ -21,7 +20,7 @@ const InnerProjects = () => {
     <section className="pt-28">
       <div className="flex  w-[90%] mr-auto ml-auto justify-around lg:flex-col">
         <div className="w-[100%] mr-auto ml-auto">
-          <img className="w-[600px] ml-auto mr-auto lg:w-[100%]" src={project.image} />
+          <img alt="projectImage" className="w-[600px] ml-auto mr-auto lg:w-[100%]" src={project.image} />
         </div>
         <div className="w-[100%] pl-2 lg:pt-16">
           <h1 className="text-16 pb-2 font-[600]">{project.title}</h1>

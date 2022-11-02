@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../../assets/css/slider.css"
 const ProjectItem = memo(({item}) => {
 
-const pathName = window.location.pathname;
 
   return (
    

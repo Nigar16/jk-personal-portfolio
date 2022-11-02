@@ -1,13 +1,9 @@
-import React, { memo } from "react";
-import storageprojects from "../../storage-projects";
+import React from "react";
 import Slider from "react-slick";
-import ProjectItem from "./Project-item";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import arrow from "../../assets/icons/arrow.svg";
 import "../../assets/css/sliderarrow.css";
-import SamplePrevArrow from "../ui/SamplePrevArrow";
-import SampleNextArrow from "../ui/SampleNextArrow";
 
 const ProjectSlider = (props) => {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (

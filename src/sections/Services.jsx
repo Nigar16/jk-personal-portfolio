@@ -1,9 +1,6 @@
 import React from 'react'
 import ServicesCardList from '../components/items/ServicesCardList';
 import items from '../storage-services';
-
-import SeeAll from "../components/ui/SeeAll";
-
 import bg from "../assets/images/BgServices.png"
 const Services=()=> {
    

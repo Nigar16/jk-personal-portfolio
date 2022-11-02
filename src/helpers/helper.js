@@ -1,10 +1,10 @@
-const getTillNumbers = (limit) => {
-  let numbers = [];
-  for (let i = 0; i < limit; i++) {
-    numbers.push(i);
-  }
-  return numbers;
-};
+// const getTillNumbers = (limit) => {
+//   let numbers = [];
+//   for (let i = 0; i < limit; i++) {
+//     numbers.push(i);
+//   }
+//   return numbers;
+// };
 
 const scrollBottom = (behavior = "auto") => {
   window.scroll({
@@ -14,5 +14,6 @@ const scrollBottom = (behavior = "auto") => {
   });
 };
 
-export default { getTillNumbers, scrollBottom };
+export  default scrollBottom ;
 // Why do we need this file??
+//We keep javaScript codes that help us 

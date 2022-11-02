@@ -3,7 +3,6 @@ import Logo from "../../ui/Logo";
 import NavbarItems from "../../items/NavbarItems";
 
 import LanguageChanger from "../../ui/LanguageChanger";
-import Button from "../../ui/Button";
 const Navbar = (props) => {
   return (
     <nav className="flex justify-between items-center  py-2 w-[90%] mr-auto ml-auto pt-[20px]">

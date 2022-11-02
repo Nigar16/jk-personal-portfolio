@@ -1,7 +1,6 @@
 import React,{memo} from "react";
 import {Link} from "react-router-dom";
 import {ReactComponent as Calendar} from "../../assets/icons/iconcalendar.svg";
-import bg from "../../assets/images/BgServices.png";
 
 const PrimaryCard=memo(({ item })=> {
     return (

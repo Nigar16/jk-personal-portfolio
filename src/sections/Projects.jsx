@@ -1,7 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
-// import Slider from '../../components/ui/Slider';
 import ProjectSlider from '../../src/components/items/Slider';
 
 

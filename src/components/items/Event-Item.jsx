@@ -1,11 +1,8 @@
-import React, { memo, useState, useEffect } from "react";
-import courseimg from "../../assets/images/CourseIMg.png";
+import React, { memo } from "react";
 import "../../assets/css/courseItem.css";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const EventItem = memo(({ item }) => {
-  const [Class, setClass] = useState("");
-  const pathName = window.location.pathname;
+
 
   // console.log(pathName);
   // const classHandler = () => {
@@ -27,7 +24,8 @@ const EventItem = memo(({ item }) => {
       >
         <div className=" ">
           <img
-            className="grid-img object-cover w-[200px] h-[150px] "
+            alt="eventImage"
+            className="grid-img object-fit w-[200px] rounded-[6px] h-[150px] "
             src={item.image}
           />
         </div>

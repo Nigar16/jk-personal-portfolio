@@ -23,6 +23,7 @@ const InlineArticle = () => {
       <div className="flex  w-[90%] mr-auto ml-auto justify-around lg:flex-col">
         <div className="w-full mr-auto ml-auto">
           <img
+           alt="articleImage"
             className="w-[600px] ml-auto mr-auto lg:w-[100%]"
             src={article.image}
           />

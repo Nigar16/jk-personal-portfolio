@@ -5,7 +5,6 @@ import storageprojects from "../storage-projects";
 import Filter from "../components/ui/Filter";
 import "../assets/css/sliderarrow.css";
 import "../index.css";
-import { useContext } from "react";
 
 export default function Projects() {
   const categories = [
@@ -21,7 +20,6 @@ export default function Projects() {
   const handleCallback = (data) => {
     setStorage(data);
   };
-  const [isActive, setIsActive] = useState(null);
 
   return (
     <section className="pt-24">
@@ -46,11 +44,11 @@ export default function Projects() {
         <div className="rounded-[50%] border-[#338FE8] absolute right-0 translate-x-[105px]  border-[1px] w-[150px] h-[150px] sm:translate-y-[70px]  ">
           <div className="rounded-[50%] ml-auto mr-auto border-[#338FE8] mt-[15%] border-[1px] w-[100px] h-[100px]"></div>
         </div>
-        <img className="one" src={require("../assets/images/Vector.png")} />
-        <img className="two" src={require("../assets/images/Vector.png")} />
-        <img className="three" src={require("../assets/images/Vector.png")} />
-        <img className="four" src={require("../assets/images/Vector.png")} />
-        <img className="five" src={require("../assets/images/Vector.png")} />
+        <img alt="vector"  className="one" src={require("../assets/images/Vector.png")} />
+        <img alt="vector" className="two" src={require("../assets/images/Vector.png")} />
+        <img alt="vector" className="three" src={require("../assets/images/Vector.png")} />
+        <img alt="vector" className="four" src={require("../assets/images/Vector.png")} />
+        <img alt="vector" className="five" src={require("../assets/images/Vector.png")} />
       </div>
       </div>
       <div className="lg:w-full w-[90%] relative  container  mt-12 py-2  bg-[#F2FAFF] mr-auto  ml-auto flex items-center whitespace-nowrap   lg:bg-white justify-between">

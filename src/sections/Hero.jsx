@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import JGimg from "../assets/images/Jk.png";
 import { ReactComponent as Facebook } from "../assets/icons/facebookfooter.svg";
 import { ReactComponent as Linkedin } from "../assets/icons/linkedinfooter.svg";

@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from "react";
+import React, { useState } from "react";
 import Card from "../components/items/Card";
 import storageblogs from "../storage-blogs";
 import Filter from "../components/ui/Filter";

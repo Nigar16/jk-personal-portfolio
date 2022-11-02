@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavbarMobile from "./Navbar-mobile";
 import helpers from "../../../helpers/helper";
 import Button from "../../ui/Button";
@@ -8,7 +8,6 @@ const Navbar = () => {
   const onArrowClick = () => {
     helpers.scrollBottom('smooth')
 }
-  const [isVisible, setIsvisible] = useState(false);
 
   const ContactmeButton= <Button onClick={onArrowClick}>Contact me</Button>
   return (

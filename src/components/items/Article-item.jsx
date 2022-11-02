@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "../../assets/images/code.png"
-import items from "../../storage-services";
 import { memo } from "react";
 const ArticleItem = memo(({item}) => {
 
